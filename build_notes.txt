@@ -5,6 +5,8 @@ Tested development environment:
 1) Visual Studio 9 (2008).  Everything should works with newer versions of Visual Studio.
 
 2) Qt 4.8.x.  The latest Qt4 should be used.  It's probably not difficult to upgrade it Qt5, but I haven't seen any reason to.
+  * Qt 4.8.6 packages are located at https://download.qt.io/archive/qt/4.8/4.8.6/
+  * To install from source code, consult these instructions http://qt-project.org/doc/qt-4.8/installation.html
 
 3) CMake 2.8+.  Any recent version of CMake should be fine.
 
