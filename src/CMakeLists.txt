@@ -27,19 +27,21 @@ IF (WIN32 AND MSVC)
   ADD_DEFINITIONS(-D_CRT_SECURE_NO_WARNINGS)
 ENDIF (WIN32 AND MSVC)
 
-FIND_PACKAGE(VTK COMPONENTS
-  vtkCommonCore
-  vtkInfovisCore
-  vtkInteractionStyle
-  vtkRenderingFreeTypeOpenGL
-  vtkViewsQt
-  vtkFiltersCore
-  vtkGUISupportQt
-  vtkIOLegacy
-  vtkIOGeometry
-  vtkFiltersCore
-  vtkIOPLY
-  )
+#FIND_PACKAGE(VTK COMPONENTS
+  #vtkCommonCore
+  #vtkInfovisCore
+  #vtkInteractionStyle
+  #vtkRenderingFreeTypeOpenGL
+  #vtkViewsQt
+  #vtkFiltersCore
+  #vtkGUISupportQt
+  #vtkIOLegacy
+  #vtkIOGeometry
+  #vtkFiltersCore
+  #vtkIOPLY
+  #)
+
+FIND_PACKAGE(VTK 6.0 REQUIRED)
 
 MESSAGE(STATUS "** USE_VTK_FILE: ${USE_VTK_FILE}")
 
